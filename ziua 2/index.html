@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular</title>
+</head>
+<body>
+    <table border="solid 1px black">
+        <tr>
+            <td>
+                <p><b>reteta de clatite</b></p>
+            </td>
+            <td>
+                <img src="clatite.png">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p><b>ingrediente</b></p>
+                <ul>
+                    <li>350 faina</li>
+                    <li>3 oua</li>
+                    <li>50 g unt topit</li>
+                    <li>500 ml lapte rece</li>
+                    <li>250 ml apa minerala</li>
+                    <li>un praf de sare</li>
+                    <li>optional: vanilie, coaja de lamaie</li>
+                    <li>ulei pentru prajit</li>
+                </ul>
+            </td>
+            <td>
+                <ol>
+                    <li><b>Timp de preparare</b> 10 minute</li>
+                    <li><b>Timp de gatit</b> 2 minute</li>
+                    <li><b>Timp Total</b> 12 minute</li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p><b>formular</b></p>
+                <form action="formular.php" method="post" name="form1">
+                    <label for="numele-tau">nume si prenume</label>
+                    <input type="text" placeholder="numele tau" id="numele-tau">
+                    <br>
+                    <label for="email">adresa de mail</label>
+                    <input type="text" placeholder="Emailul tau" id="email">
+                    <br>
+                    <label for="varsta">varsta</label>
+                    <select name="varsta" id="varsta">
+                        <option value="0-7 ani">0-7 ani</option>
+                        <option value="7-15 ani">7-15 ani</option>
+                        <option value="15-21 ani" selected>15-21 ani</option>
+                        <option value="21-35 ani">21-35 ani</option>
+                        <option value="35+ ani">35+ ani</option>
+                    </select>
+                    <br><br>
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Submit">
+                </form>
+            </td>
+            <td>
+                <form action="form.php" method="post" name="form2">
+                    <b>masini preferate</b><br>
+                    <input type="radio" value="bmw" id="bmw">
+                    <label for="bmw">bmw</label><br>
+                    <input type="radio" value="audi" id="audi">
+                    <label for="audi">audi</label><br>
+                    <input type="radio" value="volvo" id="volvo">
+                    <label for="volvo">volvo</label><br>
+                    <input type="radio" value="mercedes" id="mercedes">
+                    <label for="mercedes">mercedes</label><br>
+                    <input type="reset">
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
