@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Khula:wght@600;700&display=swap");
+$primary-color: #1c1f37;
+$link-color: #017efa;
+$border: 1px solid #e5e5e5;
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  font-weight: 600;
+}
+.container {
+  border: $border;
+  border-radius: 8px;
+
+  font-family: "Khula", sans-serif;
+  color: $primary-color;
+  .header {
+    display: flex;
+    align-items: center;
+    border-bottom: $border;
+    padding: 16px 20px;
+    .title {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 32px;
+      flex: 1;
+    }
+    .cta {
+      font-size: 14px;
+      line-height: 22px;
+      color: $link-color;
+    }
+  }
+  .content {
+    padding: 12px 20px;
+    .row {
+      padding: 12px 0px;
+      border-bottom: $border;
+      &:first-child {
+        padding-top: 0px;
+      }
+      &:last-child {
+        border: none;
+        padding-bottom: 0;
+      }
+      .event {
+        display: flex;
+        .day {
+          border: $border;
+          padding: 5px 10px;
+          span {
+            display: block;
+            &.month {
+              font-size: 12px;
+              line-height: 14px;
+              text-align: center;
+              color: rgba($primary-color, $alpha: 0.5);
+            }
+            &.no {
+              line-height: 22px;
+            }
+          }
+        }
+        .name {
+          padding-left: 8px;
+          span {
+            display: block;
+            &.title {
+              line-height: 26px;
+            }
+            &.place {
+              font-size: 12px;
+              line-height: 19px;
+              color: rgba($primary-color, $alpha: 0.5);
+            }
+          }
+        }
+      }
+      .status {
+        display: flex;
+        .progress-bar {
+          margin-top: 12px;
+          margin-right: 12px;
+          width: 100px;
+          height: 4px;
+          background: #e5e5e5;
+          border-radius: 44px;
+          .bar {
+            background: #51cbff;
+            height: 4px;
+            border-radius: 44px;
+          }
+        }
+        span {
+          padding-top: 4px;
+          font-size: 12px;
+          line-height: 19px;
+          color: rgba($primary-color, $alpha: 0.5);
+        }
+      }
+    }
+  }
+}
