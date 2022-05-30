@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
+
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Mulish", sans-serif;
+  color: white;
+}
+
+.container {
+  width: 1120px;
+  background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
+  border-radius: 24px;
+  .title {
+    display: block;
+    text-align: center;
+    padding-top: 64px;
+    span {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 48px;
+    }
+    .bar {
+      width: 56px;
+      height: 2px;
+      background: white;
+      border-radius: 6px;
+      margin: auto;
+      margin-top: 24px;
+    }
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    padding: 66px 118px 80px;
+    .profile {
+      display: flex;
+      padding-right: 110px;
+      .picture {
+        width: 133px;
+        height: 133px;
+        background: url("../img/image\ 1.png");
+        border-radius: 50%;
+        border: 4px solid white;
+      }
+      .user {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          padding-left: 29px;
+        .name {
+          font-weight: 700;
+          font-size: 22px;
+          line-height: 48px;
+        }
+        .post {
+            margin-top: -15px;
+          font-size: 18px;
+          line-height: 48px;
+          color: rgba(255, 255, 255, 0.85);
+        }
+      }
+    }
+    .text {
+      width: 420px;
+    }
+  }
+}
