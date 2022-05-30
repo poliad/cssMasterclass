@@ -10,7 +10,6 @@ body {
   font-family: "Source Sans Pro", sans-serif; }
 
 .container {
-  height: 278px;
   width: 230px;
   border: 1px solid #e5e5e5;
   border-radius: 8px; }
@@ -33,7 +32,7 @@ body {
     padding-top: 4px;
     padding-bottom: 12px;
     font-weight: 600;
-    color: #000; }
+    color: #000000; }
   .content .info {
     display: flex; }
     .content .info .t-blue {
@@ -52,12 +51,15 @@ body {
   .footer .cta {
     font-weight: 600;
     color: #006af7;
-    width: 100px; }
+    width: 100px;
+    cursor: pointer; }
+    .footer .cta:hover {
+      text-decoration: underline; }
   .footer .price {
     text-align: right;
     font-size: 20px;
     line-height: 20px;
-    color: #000; }
+    color: #000000; }
 
 .p-r-24 {
   padding-right: 24px; }
