@@ -7,12 +7,13 @@ body {
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  font-weight: 600; }
+  font-weight: 600;
+  font-family: "Khula", sans-serif; }
 
 .container {
   border: 1px solid #e5e5e5;
   border-radius: 8px;
-  font-family: "Khula", sans-serif;
+  width: 380px;
   color: #1c1f37; }
   .container .header {
     display: flex;
@@ -27,7 +28,10 @@ body {
     .container .header .cta {
       font-size: 14px;
       line-height: 22px;
-      color: #017efa; }
+      color: #017efa;
+      cursor: pointer; }
+      .container .header .cta:hover {
+        text-decoration: underline; }
   .container .content {
     padding: 12px 20px; }
     .container .content .row {
@@ -42,7 +46,8 @@ body {
         display: flex; }
         .container .content .row .event .day {
           border: 1px solid #e5e5e5;
-          padding: 5px 10px; }
+          padding: 5px 10px;
+          border-radius: 4px; }
           .container .content .row .event .day span {
             display: block; }
             .container .content .row .event .day span.month {
@@ -69,7 +74,7 @@ body {
           margin-right: 12px;
           width: 100px;
           height: 4px;
-          background: #e5e5e5;
+          background: 1px solid #e5e5e5;
           border-radius: 44px; }
           .container .content .row .status .progress-bar .bar {
             background: #51cbff;

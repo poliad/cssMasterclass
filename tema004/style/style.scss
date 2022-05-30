@@ -2,6 +2,8 @@
 $primary-color: #1c1f37;
 $link-color: #017efa;
 $border: 1px solid #e5e5e5;
+$border-color: #e5e5e5;
+$blue: #51cbff;
 
 body {
   padding: 0;
@@ -11,13 +13,13 @@ body {
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  font-weight: 600;
+  font-weight: 600;  
+  font-family: "Khula", sans-serif;
 }
 .container {
   border: $border;
   border-radius: 8px;
-
-  font-family: "Khula", sans-serif;
+  width: 380px;
   color: $primary-color;
   .header {
     display: flex;
@@ -34,7 +36,12 @@ body {
       font-size: 14px;
       line-height: 22px;
       color: $link-color;
+      cursor: pointer;
+      &:hover{
+        text-decoration: underline;
+      }
     }
+
   }
   .content {
     padding: 12px 20px;
@@ -53,13 +60,14 @@ body {
         .day {
           border: $border;
           padding: 5px 10px;
+          border-radius: 4px;
           span {
             display: block;
             &.month {
               font-size: 12px;
               line-height: 14px;
               text-align: center;
-              color: rgba($primary-color, $alpha: 0.5);
+              color: rgba($primary-color, 0.5);
             }
             &.no {
               line-height: 22px;
@@ -76,7 +84,7 @@ body {
             &.place {
               font-size: 12px;
               line-height: 19px;
-              color: rgba($primary-color, $alpha: 0.5);
+              color: rgba($primary-color, 0.5);
             }
           }
         }
@@ -88,10 +96,10 @@ body {
           margin-right: 12px;
           width: 100px;
           height: 4px;
-          background: #e5e5e5;
+          background: $border;
           border-radius: 44px;
           .bar {
-            background: #51cbff;
+            background: $blue;
             height: 4px;
             border-radius: 44px;
           }
@@ -100,7 +108,7 @@ body {
           padding-top: 4px;
           font-size: 12px;
           line-height: 19px;
-          color: rgba($primary-color, $alpha: 0.5);
+          color: rgba($primary-color, 0.5);
         }
       }
     }
