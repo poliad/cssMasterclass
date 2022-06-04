@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Source Sans Pro", sans-serif; }
+
+.container {
+  width: 720px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 32px 20px 16px; }
+  .container .user {
+    display: flex; }
+    .container .user .img {
+      width: 52px;
+      height: 52px;
+      background: url("../Photo.png");
+      border-radius: 50%;
+      margin-right: 15px; }
+    .container .user .details span {
+      font-size: 10px;
+      display: block; }
+    .container .user .details .name {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 18px;
+      color: #181818; }
+    .container .user .details .post {
+      line-height: 15px;
+      color: #969696; }
+    .container .user .details .connections {
+      line-height: 18px;
+      color: #4c3fb1; }
+  .container .actions {
+    display: flex;
+    align-items: center; }
+    .container .actions .btn {
+      width: 90px;
+      height: 32px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 32px;
+      text-align: center;
+      cursor: pointer; }
+    .container .actions .accept {
+      background: #aca1ff;
+      border: 1px solid #aca1ff;
+      color: #4c3fb1;
+      margin-right: 10px; }
+      .container .actions .accept:hover {
+        background: #786dcf;
+        border: 1px solid #786dcf;
+        color: white; }
+      .container .actions .accept:focus {
+        background: #4c3fb1;
+        border: 1px solid #4c3fb1;
+        color: white; }
+    .container .actions .decline {
+      border: 1px solid #000000;
+      border-radius: 4px; }
+
+/*# sourceMappingURL=style.css.map */
