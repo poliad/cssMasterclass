@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #969696;
+  font-size: 10px;
+  line-height: 15px; }
+
+.container .card {
+  display: flex;
+  padding: 16px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  margin-bottom: 24px;
+  align-items: center;
+  width: 320px; }
+  .container .card .img {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: url("../img/Photo1.png");
+    margin-right: 16px; }
+    .container .card .img.two {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: url("../img/Photo2.png"); }
+    .container .card .img.three {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: url("../img/Photo3.png"); }
+  .container .card .person {
+    flex: 1; }
+    .container .card .person span {
+      display: block; }
+      .container .card .person span.name {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        color: #181818; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
+$gray: #969696;
+$border-color: #e5e5e5;
+$black: #181818;
+@mixin img($image) {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: $image;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Source Sans Pro", sans-serif;
+  color: $gray;
+  font-size: 10px;
+  line-height: 15px;
+}
+
+.container {
+  .card {
+    display: flex;
+    padding: 16px;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+    margin-bottom: 24px;
+    align-items: center;
+    width: 320px;
+    .img {
+      @include img(url("../img/Photo1.png"));
+      margin-right: 16px;
+      &.two{
+        @include img(url("../img/Photo2.png"));
+      }
+      &.three{
+        @include img(url("../img/Photo3.png"));
+      }
+    }
+    .person {
+        flex: 1;
+      span {
+        display: block;
+        &.name {
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 18px;
+          color: $black;
+        }
+      }
+    }
+  }
+}
