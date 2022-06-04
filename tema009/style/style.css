@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Lora:wght@400;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Lato", sans-serif;
+  color: white; }
+
+.container {
+  display: flex;
+  padding: 0 139px;
+  align-items: center; }
+  .container .left-side {
+    width: 50%;
+    display: flex; }
+    .container .left-side .col {
+      padding-right: 100px; }
+      .container .left-side .col .row {
+        padding-bottom: 64px; }
+        .container .left-side .col .row:last-child {
+          padding-bottom: 0; }
+        .container .left-side .col .row span {
+          color: #9a9a9a;
+          display: block; }
+          .container .left-side .col .row span.no {
+            font-family: "Lora";
+            font-size: 32px;
+            line-height: 41px;
+            color: #10375c;
+            padding-bottom: 8px; }
+  .container .right-side {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    background: #10375c;
+    padding: 54px;
+    width: 540px; }
+    .container .right-side span {
+      display: block; }
+      .container .right-side span:first-child {
+        position: relative; }
+        .container .right-side span:first-child::before {
+          content: "";
+          width: 73px;
+          height: 2px;
+          background: white;
+          position: absolute;
+          top: 15px;
+          left: 124px; }
+      .container .right-side span.title {
+        padding: 8px 0 24px;
+        font-family: "Lora";
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 51px; }
+
+/*# sourceMappingURL=style.css.map */

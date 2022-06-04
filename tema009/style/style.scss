@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Lora:wght@400;700&display=swap");
+$gray: #9a9a9a;
+$primary: #10375c;
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Lato", sans-serif;
+  color: white;
+}
+
+.container {
+  display: flex;
+  padding: 0 139px;
+  align-items: center;
+  .left-side {
+    width: 50%;
+    display: flex;
+    .col {
+      padding-right: 100px;
+      .row {
+        padding-bottom: 64px;
+        &:last-child {
+          padding-bottom: 0;
+        }
+        span {
+          color: $gray;
+          display: block;
+          &.no {
+            font-family: "Lora";
+            font-size: 32px;
+            line-height: 41px;
+            color: $primary;
+            padding-bottom: 8px;
+          }
+        }
+      }
+    }
+  }
+  .right-side {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    background: $primary;
+    padding: 54px;
+    width: 540px;
+
+    span {
+      display: block;
+      &:first-child {
+        position: relative;
+        &::before {
+          content: "";
+          width: 73px;
+          height: 2px;
+          background: white;
+          position: absolute;
+          top: 15px;
+          left: 124px;
+        }
+      }
+      &.title {
+        padding: 8px 0 24px;
+        font-family: "Lora";
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 51px;
+      }
+    }
+  }
+}
