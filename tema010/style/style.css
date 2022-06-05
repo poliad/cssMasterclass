@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;600;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: #d1c9c9;
+  font-family: "Mulish", sans-serif; }
+
+.container .title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 56px;
+  position: relative; }
+  .container .title:after {
+    width: 56px;
+    height: 2px;
+    content: "";
+    background: black;
+    position: absolute;
+    text-align: center;
+    top: 76px;
+    left: calc(50% - 32px); }
+.container .cards {
+  padding-top: 55px;
+  padding-bottom: 33px;
+  display: flex; }
+  .container .cards .card {
+    background: white;
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    border-radius: 20px;
+    width: 350px;
+    margin-right: 34px; }
+    .container .cards .card .img {
+      height: 240px;
+      border-radius: 10px 10px 0 0;
+      background: url("../img/image1.png"); }
+      .container .cards .card .img.second {
+        background: url("../img/image2.png"); }
+      .container .cards .card .img.third {
+        background: url("../img/image3.png"); }
+    .container .cards .card .content {
+      padding: 20px 33px; }
+      .container .cards .card .content span {
+        display: block;
+        font-size: 16px;
+        line-height: 28px;
+        color: #7d7987;
+        padding-bottom: 10px; }
+        .container .cards .card .content span.card-title {
+          font-weight: 700;
+          font-size: 21px;
+          line-height: 32px;
+          color: black; }
+        .container .cards .card .content span.link {
+          font-weight: 600;
+          font-size: 17px;
+          line-height: 28px;
+          padding-top: 20px;
+          color: #4089ed; }
+          .container .cards .card .content span.link:hover {
+            cursor: pointer;
+            text-decoration: underline; }
+.container .cta {
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 56px;
+  color: #4089ed;
+  margin: auto;
+  width: 200px;
+  background: white;
+  border-radius: 55px; }
+
+/*# sourceMappingURL=style.css.map */
